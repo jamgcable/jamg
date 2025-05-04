@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>streaming</title>
     <video autoplay="autoplay" loop="loop" id="video_background" preload="auto" volume="0"/>
-  <source src="203987-923133879_small.mp4" type="video/mp4" />
+  <source src="203987-923133879_small.mp4" type="video/webm" />
 </video/>
     <style>
      p {
@@ -24,7 +24,8 @@ body {
   -ms-user-select: none;
   user-select: none;
 }
-        #video_background {
+        
+#video_background {
 position: absolute;
 bottom: 0px;
 right: 0px;
@@ -35,6 +36,7 @@ height: auto;
 z-index: -1000;
 overflow: hidden;
 }
+        
 #video_pattern {
 background:#fff;
 position: fixed;
