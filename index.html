@@ -4,6 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>streaming</title>
+    // Bloquea el evento copy
+document.addEventListener('copy', function(e) {
+    e.preventDefault();
+    alert('La copia de texto está deshabilitada.');
+});
+
+// Bloquea el evento paste
+document.addEventListener('paste', function(e) {
+    e.preventDefault();
+    alert('El pegado está deshabilitado.');
+});
      <style>
    p {
        color: white;
