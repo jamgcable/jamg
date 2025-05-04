@@ -60,6 +60,36 @@ body {
       font-size: 2em;
       padding: 50px;
     }
+        /* Ajuste del video para móviles */
+#video_background {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1;
+  /* Centrado absoluto (alternativa si el video no escala bien) */
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  /* Asegura que el video cubra toda la pantalla sin deformarse */
+  object-fit: cover;
+}
+
+/* Media query para móviles (ejemplo: pantallas menores a 768px) */
+@media (max-width: 768px) {
+  #video_background {
+    /* Ajusta el ancho/alto si es necesario */
+    min-width: 100%;
+    min-height: 100%;
+    /* Fuerza el centrado */
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
     </style>
   </head>
 <body>
