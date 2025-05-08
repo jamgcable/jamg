@@ -1,1 +1,54 @@
+ /* Reset básico y estilos generales */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f5f5f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            color: #333;
+        }
 
+        /* Caja central */
+        .caja-construccion {
+            width: 90%;
+            max-width: 500px;
+            padding: 30px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        /* Espacio para el logo */
+        .logo-container {
+            margin: 0 auto 20px;
+            width: 150px;
+            height: 150px;
+            background: #f0f0f0; /* Fondo temporal */
+            border-radius: 50%; /* Opcional: forma circular */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden; /* Para recortar el logo si es necesario */
+        }
+
+        /* Mensaje */
+        .mensaje {
+            margin: 20px 0;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        /* Responsividad */
+        @media (max-width: 600px) {
+            .caja-construccion {
+                padding: 20px;
+            }
+            .logo-container {
+                width: 120px;
+                height: 120px;
+            }
+        }
